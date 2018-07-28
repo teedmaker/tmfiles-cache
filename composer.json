@@ -9,5 +9,10 @@
             "email": "tadeufbarbosa@gmail.com"
         }
     ],
+    "autoload": {
+        "files": [
+            "src/bootstrap/initialize.php"
+        ]
+    },
     "require": {}
 }
