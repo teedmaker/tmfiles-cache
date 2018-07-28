@@ -1,0 +1,13 @@
+{
+    "name": "teedmaker/tmfiles-cache",
+    "description": "A library to work with file cache",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Tadeu Barbosa",
+            "email": "tadeufbarbosa@gmail.com"
+        }
+    ],
+    "require": {}
+}
