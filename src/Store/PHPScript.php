@@ -31,17 +31,11 @@ class PHPScript
     /**
      * Setting the engine class to manipulates this file.
      *
-     * @param [type] $object
+     * @param string $className
      * @return TMFiles\Cache\Store\PHPScript
      */
-    public function engine($object) {
-        if (is_string($object)) {
-            if (!class_exists($object)) {
-                throw new Excpetion("The engine class `{$object}` does not exists.");
-            }
-            $object = new $object;
-        }
-        $this->engineClass = $object;
+    public function engine(string $className) {
+        $this->engineClass = $className;
         return $this;
     }
 
@@ -69,6 +63,9 @@ class PHPScript
         return $this->file->modified()->isGreaterThan($this->cache);
     }
 
-    protected function cacheTheFile() {}
+    protected function cacheTheFile() {
+        $engineClass = $this->engineClass;
+        $this->engineClass = new $engineClass($this->file->getContent());
+    }
 
 }

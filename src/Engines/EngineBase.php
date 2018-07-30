@@ -16,4 +16,16 @@ class EngineBase
     public function setFunc(string $name, callable $method) {
         $this->functions[$name] = $method;
     }
+
+    /**
+     * Returns the content value
+     *
+     * @return string
+     */
+    public function getContent(): string {
+        if (isset($this->includes)) {
+            include $this->includes;
+        }
+        return $this->content;
+    }
 }

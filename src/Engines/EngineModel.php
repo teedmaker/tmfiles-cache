@@ -2,13 +2,7 @@
 
 namespace TMFiles\Cache\Engines;
 
-abstract class EngineModel
+abstract class EngineModel extends EngineBase implements EngineModel
 {
-
-    public function __construct() {}
-
-    public function manipulate() {}
-
-    public function getContent(): string {}
-
+    abstract public function __construct(string $content);
 }
