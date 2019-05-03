@@ -15,7 +15,7 @@
             "src/App/"
         ],
         "psr-4": {
-            "src/": "TMPHP\\Cache\\"
+            "TMPHP\\Cache\\": "src/"
         }
     },
     "require": {
