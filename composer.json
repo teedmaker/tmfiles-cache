@@ -1,5 +1,5 @@
 {
-    "name": "teedmaker/tmfiles-cache",
+    "name": "teedmaker/tmphp-cache",
     "description": "A simple library to manipulate file cache ",
     "type": "library",
     "license": "MIT",
