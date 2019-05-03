@@ -2,14 +2,12 @@
 
 namespace TMPHP\Cache\App;
 
-use TMFile;
-use Excpetion;
+use TMPHPFile;
 
 class Brain
 {
-    protected $file        = null;
-    protected $cache       = null;
-    protected $engineClass = 'TMPHP\\Cache\\Engine\\PHPSimple';
+    protected $file  = null;
+    protected $cache = null;
 
     /**
      * Initializing a new PHP script file
@@ -19,12 +17,11 @@ class Brain
      * @param string $cacheName
      */
     public function __construct(string $path, string $cacheDir=null, string $cacheName=null) {
-        $cacheDir  = $cacheDir ?? TMFFILES_DIR;
         $cacheDir .= substr($cacheDir, -1)==='/'? '': '/';
         $cacheName = $cacheName ?? md5($path);
-        $cache     = "{$cacheDir}{$cacheName}";
-        $this->file  = new TMFile($path);
-        $this->cache = new TMFile($cache);
+        $cache     = $cacheDir . $cacheName;
+        $this->file  = new TMPHPFile($path);
+        $this->cache = new TMPHPFile($cache);
         return $this;
     }
 
