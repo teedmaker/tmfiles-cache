@@ -13,11 +13,12 @@ class Cache
     /**
      * Initializing a new PHP script file
      *
+     * @param string $engine
      * @param string $path
      * @param string $cacheDir
      * @param string $cacheName
      */
-    public function __construct(string $path, string $cacheDir=null, string $cacheName=null) {
+    public function __construct(TMPHP\Cache\Engine\EngineBase $engine, string $path, string $cacheDir=null, string $cacheName=null) {
         $cacheDir .= substr($cacheDir, -1)==='/'? '': '/';
         $cacheName = $cacheName ?? md5($path);
         $cache     = $cacheDir . $cacheName;
