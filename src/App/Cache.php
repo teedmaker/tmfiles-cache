@@ -4,7 +4,7 @@ namespace TMPHP\Cache\App;
 
 use TMPHPFile;
 
-class Brain
+class Cache
 {
     protected $file   = null;
     protected $cache  = null;
