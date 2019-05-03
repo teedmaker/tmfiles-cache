@@ -1,6 +1,6 @@
 <?php
 
-namespace TMFiles\Cache\Engines;
+namespace TMPHP\Cache\Engines;
 
 abstract class EngineModel extends EngineBase implements EngineModel
 {

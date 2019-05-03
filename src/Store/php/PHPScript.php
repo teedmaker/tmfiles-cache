@@ -1,6 +1,6 @@
 <?php
 
-namespace TMFiles\Cache\Store;
+namespace TMPHP\Cache\Store;
 
 use TMFile;
 use Excpetion;
@@ -9,7 +9,7 @@ class PHPScript
 {
     protected $file        = null;
     protected $cache       = null;
-    protected $engineClass = 'TMFiles\\Engines\\PHPSimple';
+    protected $engineClass = 'TMPHP\\Cache\\Engines\\PHPSimple';
 
     /**
      * Initializing a new PHP script file
@@ -32,7 +32,7 @@ class PHPScript
      * Setting the engine class to manipulates this file.
      *
      * @param string $className
-     * @return TMFiles\Cache\Store\PHPScript
+     * @return TMPHP\Cache\Store\PHPScript
      */
     public function engine(string $className) {
         $this->engineClass = $className;

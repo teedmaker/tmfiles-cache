@@ -1,6 +1,6 @@
 <?php
 
-namespace TMFiles\Cache\Engines;
+namespace TMPHP\Cache\Engines;
 
 class PHPSimple extends EngineBase implements EngineModel
 {
