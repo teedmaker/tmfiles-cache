@@ -1,18 +1,18 @@
 {
     "name": "teedmaker/tmfiles-cache",
-    "description": "A library to work with file cache",
+    "description": "A simple library to manipulate file cache ",
     "type": "library",
-    "license": "Apache-2.0",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Tadeu Barbosa",
-            "email": "tadeufbarbosa@gmail.com"
+            "name"     : "Tadeu Barbosa",
+            "email"    : "tadeufbarbosa@gmail.com",
+            "homepage" : "https://www.linkedin.com/in/tadeubarbosa/"
         }
     ],
     "autoload": {
         "files": [
             "src/bootstrap/initialize.php"
         ]
-    },
-    "require": {}
+    }
 }
