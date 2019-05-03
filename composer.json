@@ -10,6 +10,14 @@
             "homepage" : "https://www.linkedin.com/in/tadeubarbosa/"
         }
     ],
+    "autoload": {
+        "classmap": [
+            "src/App/"
+        ],
+        "psr-4": {
+            "src/": "TMPHP\\Cache\\"
+        }
+    },
     "require": {
         "teedmaker/tmphp-files": "^1.1"
     }
