@@ -1,11 +1,11 @@
 <?php
 
-namespace TMPHP\Cache\Store;
+namespace TMPHP\Cache\App;
 
 use TMFile;
 use Excpetion;
 
-class PHPScript
+class Brain
 {
     protected $file        = null;
     protected $cache       = null;
