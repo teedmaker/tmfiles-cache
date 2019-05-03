@@ -9,7 +9,7 @@ class PHPScript
 {
     protected $file        = null;
     protected $cache       = null;
-    protected $engineClass = 'TMPHP\\Cache\\Engines\\PHPSimple';
+    protected $engineClass = 'TMPHP\\Cache\\Engine\\PHPSimple';
 
     /**
      * Initializing a new PHP script file
