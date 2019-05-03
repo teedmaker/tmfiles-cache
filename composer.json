@@ -11,6 +11,6 @@
         }
     ],
     "require": {
-        "teedmaker/tmphp-files": "1.1.0"
+        "teedmaker/tmphp-files": "v1.*"
     }
 }
