@@ -6,8 +6,9 @@ use TMPHPFile;
 
 class Brain
 {
-    protected $file  = null;
-    protected $cache = null;
+    protected $file   = null;
+    protected $cache  = null;
+    protected $engine = null;
 
     /**
      * Initializing a new PHP script file
@@ -31,7 +32,7 @@ class Brain
      * @param string $class
      */
     public function engine(string $class) {
-        $this->engineClass = $class;
+        $this->engine = $class;
         return $this;
     }
 
@@ -60,8 +61,8 @@ class Brain
     }
 
     protected function cacheTheFile() {
-        $engineClass = $this->engineClass;
-        $this->engineClass = new $engineClass($this->file->getContent());
+        $engine = $this->engine;
+        $this->engine = new $engine($this->file->getContent());
     }
 
 }
