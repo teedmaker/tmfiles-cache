@@ -2,7 +2,7 @@
 
 namespace TMPHP\Cache\Engine;
 
-class PHPSimple extends EngineBase implements EngineModel
+class PHPEngine extends EngineBase implements EngineModel
 {
     protected $content  = null;
     protected $includes = 'includes/php-simples.php';
