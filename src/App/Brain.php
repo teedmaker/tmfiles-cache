@@ -43,7 +43,7 @@ class Brain
      */
     public function get() {
         if ($this->verifyHasEdited()) {
-            return $this->cacheTheFile();
+            return $this->cache();
         }
         return $this->cache->getPath();
     }
@@ -60,9 +60,14 @@ class Brain
         return $this->file->modified()->isGreaterThan($this->cache);
     }
 
-    protected function cacheTheFile() {
-        $engine = $this->engine;
-        $this->engine = new $engine($this->file->getContent());
+    /**
+     * Cache this file with the engine passed before
+     *
+     * @return void
+     */
+    protected function cache() {
+        $this->engine = new ${$this->engine}($this->file->getContent());
+        return $this;
     }
 
 }
