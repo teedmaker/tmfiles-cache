@@ -2,7 +2,7 @@
 
 namespace TMPHP\Cache\Store;
 
-class PHPEngine extends EngineBase implements EngineModel
+class Engine extends EngineBase implements EngineModel
 {
     protected $content  = null;
     protected $includes = [

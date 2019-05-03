@@ -1,6 +1,6 @@
 <?php
 
-$app = new TMPHP\Cache\Store\PHPEngine;
+$app = new TMPHP\Cache\Store\PHP\Engine;
 
 /**
  * Prints a hello world
