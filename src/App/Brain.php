@@ -28,11 +28,10 @@ class Brain
     /**
      * Setting the engine class to manipulates this file.
      *
-     * @param string $className
-     * @return TMPHP\Cache\Store\PHPScript
+     * @param string $class
      */
-    public function engine(string $className) {
-        $this->engineClass = $className;
+    public function engine(string $class) {
+        $this->engineClass = $class;
         return $this;
     }
 
