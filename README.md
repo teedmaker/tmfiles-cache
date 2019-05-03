@@ -2,4 +2,4 @@
 
 A simples library to manipulate file caching.
 
-Some features is coming! :blink:
+Some features is coming! :wink:
