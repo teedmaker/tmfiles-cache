@@ -1,4 +1,5 @@
-# TMFiles-Cache
+# TMPHP Cache
 
-A library to work with file cache.\
-This library provides file cache manipulation.
+A simples library to manipulate file caching.
+
+Some features is coming! :blink:
