@@ -9,10 +9,5 @@
             "email"    : "tadeufbarbosa@gmail.com",
             "homepage" : "https://www.linkedin.com/in/tadeubarbosa/"
         }
-    ],
-    "autoload": {
-        "files": [
-            "src/bootstrap/initialize.php"
-        ]
-    }
+    ]
 }
