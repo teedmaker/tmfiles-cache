@@ -1,6 +1,6 @@
 <?php
 
-namespace TMPHP\Cache\Engine;
+namespace TMPHP\Cache\Store;
 
 class PHPEngine extends EngineBase implements EngineModel
 {
