@@ -9,5 +9,8 @@
             "email"    : "tadeufbarbosa@gmail.com",
             "homepage" : "https://www.linkedin.com/in/tadeubarbosa/"
         }
-    ]
+    ],
+    "require": {
+        "teedmaker/tmphp-files": "1.1.0"
+    }
 }
