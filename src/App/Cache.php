@@ -1,7 +1,5 @@
 <?php
 
-namespace TMPHP\Cache\App;
-
 use TMPHPFile;
 
 class Cache
