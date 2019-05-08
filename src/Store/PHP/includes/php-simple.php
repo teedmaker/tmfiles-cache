@@ -4,8 +4,9 @@ $app = new TMPHP\Cache\Store\PHP\Engine;
 
 /**
  * Prints a hello world
+ * g: global
  */
-$app->setFunc('/\@helloWorld/', function() {
+$app->setFunc('/\@helloWorld/g', function() {
     return 'echo "Hello World!";';
 });
 
