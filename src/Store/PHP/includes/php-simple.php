@@ -19,9 +19,12 @@ $app->setFunc("/\@sayMyName\(((\"|\')(.*)(\"|\')|(.*))\)/g", function(array $mat
 
 /**
  * Provides a foreach function
+ * U: find more than one
+ * g: global
+ * s: includes new line on dot
  */
-$app->setFunc('/(\@foreach\((.*)\)\n(.*)\n\@enforeach)/', function() {
-    return 'foreach ($1) {
-        $2
+$app->setFunc("/\@foreach\((.*)\)(.*)\@endforeach/Ugs", function(array $matches) {
+    return 'foreach ({$matches[1]}) {
+        $matches[2]
     }';
 });
