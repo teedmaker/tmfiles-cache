@@ -12,8 +12,9 @@ $app->setFunc('/\@helloWorld/', function() {
 /**
  * print a hello name
  */
-$app->setFunc('/\@sayMyName\(([a-zA-Z])\)/', function() {
-    return 'echo "Hello $1!";';
+$app->setFunc("/\@sayMyName\(((\"|\')(.*)(\"|\')|(.*))\)/g", function(array $matches) {
+    $name = $matches[5] ?? $matches[3];
+    return 'echo "Hello {$name}!";';
 });
 
 /**
