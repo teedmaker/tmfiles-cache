@@ -17,7 +17,7 @@ $app->setFunc('/\@helloWorld/g', function() {
  */
 $app->setFunc("/\@sayMyName\(((\"|\')(.*)(\"|\')|(.*))\)/gU", function(array $matches) {
     $name = $matches[5] ?? $matches[3];
-    return 'echo "Hello {$name}!";';
+    return 'echo "Hello $name!";';
 });
 
 /**
