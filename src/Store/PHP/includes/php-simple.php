@@ -10,9 +10,11 @@ $app->setFunc('/\@helloWorld/', function() {
 });
 
 /**
- * print a hello name
+ * Print a hello name
+ * g: global
+ * U: find more than one
  */
-$app->setFunc("/\@sayMyName\(((\"|\')(.*)(\"|\')|(.*))\)/g", function(array $matches) {
+$app->setFunc("/\@sayMyName\(((\"|\')(.*)(\"|\')|(.*))\)/gU", function(array $matches) {
     $name = $matches[5] ?? $matches[3];
     return 'echo "Hello {$name}!";';
 });
@@ -25,6 +27,6 @@ $app->setFunc("/\@sayMyName\(((\"|\')(.*)(\"|\')|(.*))\)/g", function(array $mat
  */
 $app->setFunc("/\@foreach\((.*)\)(.*)\@endforeach/Ugs", function(array $matches) {
     return 'foreach ({$matches[1]}) {
-        $matches[2]
+        {$matches[2]}
     }';
 });
