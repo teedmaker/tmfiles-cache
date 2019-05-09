@@ -31,3 +31,5 @@ $app->setFunc("/\@foreach\((.*)\)(.*)\@endforeach/Ugs", function(array $matches)
         {$matches[2]}
     }';
 });
+
+return $app;
