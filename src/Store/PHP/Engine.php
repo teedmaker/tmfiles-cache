@@ -7,7 +7,7 @@ use TMPHP\Cache\Engines\{
     EngineModel
 };
 
-class Engine extends EngineBase implements EngineModel
+class Engine extends EngineBase
 {
     protected $content  = null;
     protected $includes = [
