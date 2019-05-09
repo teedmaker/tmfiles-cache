@@ -2,6 +2,6 @@
 
 namespace TMPHP\Cache\Engines;
 
-abstract class EngineModel extends EngineBase implements EngineModel
+abstract class EngineModel extends EngineBase
 {
 }
