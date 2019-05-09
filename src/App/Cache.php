@@ -1,7 +1,5 @@
 <?php
 
-use TMPHPFile;
-
 class Cache
 {
     protected $file   = null;
