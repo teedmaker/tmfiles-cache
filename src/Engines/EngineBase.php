@@ -1,6 +1,6 @@
 <?php
 
-namespace TMPHP\Cache\Engine;
+namespace TMPHP\Cache\Engines;
 
 class EngineBase
 {
