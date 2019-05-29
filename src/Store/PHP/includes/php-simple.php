@@ -7,7 +7,7 @@ $app = new TMPHP\Cache\Store\PHP\Engine;
  * g: global
  */
 $app->setFunc('/\@helloWorld/g', function() {
-    return 'echo "Hello World!";';
+  return 'echo "Hello World!";';
 });
 
 /**
@@ -16,8 +16,8 @@ $app->setFunc('/\@helloWorld/g', function() {
  * U: find more than one
  */
 $app->setFunc("/\@sayMyName\(((\"|\')(.*)(\"|\')|(.*))\)/gU", function(array $matches) {
-    $name = $matches[5] ?? $matches[3];
-    return 'echo "Hello $name!";';
+  $name = $matches[5] ?? $matches[3];
+  return 'echo "Hello $name!";';
 });
 
 /**
@@ -27,9 +27,9 @@ $app->setFunc("/\@sayMyName\(((\"|\')(.*)(\"|\')|(.*))\)/gU", function(array $ma
  * s: includes new line on dot
  */
 $app->setFunc("/\@foreach\((.*)\)(.*)\@endforeach/Ugs", function(array $matches) {
-    return 'foreach ({$matches[1]}) {
-        {$matches[2]}
-    }';
+  return 'foreach ({$matches[1]}) {
+    {$matches[2]}
+  }';
 });
 
 return $app;
